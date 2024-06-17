@@ -23,10 +23,8 @@ MonoBehaviour:
     - cardMaterial: {fileID: 11400000, guid: 85de174c7a34ab640b93b1b8189aa917, type: 2}
       count: 5
     cardsCreated:
-    - {fileID: 11400000, guid: b155c33aea5eb014d9b47d3b2ea268f4, type: 2}
-    - {fileID: 11400000, guid: ac1ae3ea5f9693f4bb33843edf8345ec, type: 2}
-    - {fileID: 11400000, guid: ecddfa6f8adb11a46b8cf15ff3899942, type: 2}
-    createCount: 4
+    - {fileID: 11400000, guid: 1a2089126a076144db5c396fa8291271, type: 2}
+    createCount: 1
   - productionDuration: 3
     allMaterialsRequired: 1
     consumeMaterials: 1
@@ -34,7 +32,9 @@ MonoBehaviour:
     - cardMaterial: {fileID: 11400000, guid: 85de174c7a34ab640b93b1b8189aa917, type: 2}
       count: 3
     cardsCreated:
-    - {fileID: 11400000, guid: b155c33aea5eb014d9b47d3b2ea268f4, type: 2}
-    - {fileID: 11400000, guid: ac1ae3ea5f9693f4bb33843edf8345ec, type: 2}
-    - {fileID: 11400000, guid: ecddfa6f8adb11a46b8cf15ff3899942, type: 2}
-    createCount: 2
+    - {fileID: 11400000, guid: 43e2f3b5ce898074e8497c8b90e38417, type: 2}
+    createCount: 1
+  possiblePreference: []
+  prefChangeDuration: 0
+  output: []
+  count: 0

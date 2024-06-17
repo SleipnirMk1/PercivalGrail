@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8218136396f3fd4182cf1d0f541b9ae, type: 3}
+  m_Name: BoosterPack
+  m_EditorClassIdentifier: 
+  cardName: BoosterPack
+  cardType: 4
+  cardColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  recipes: []
+  possiblePreference: []
+  prefChangeDuration: 0
+  output:
+  - {fileID: 11400000, guid: b155c33aea5eb014d9b47d3b2ea268f4, type: 2}
+  - {fileID: 11400000, guid: ac1ae3ea5f9693f4bb33843edf8345ec, type: 2}
+  - {fileID: 11400000, guid: ecddfa6f8adb11a46b8cf15ff3899942, type: 2}
+  count: 2

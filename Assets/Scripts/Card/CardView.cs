@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class CardView : MonoBehaviour
 {
@@ -14,10 +15,15 @@ public class CardView : MonoBehaviour
     
     public CardModel Model { get; private set; }
 
-    public void Init(CardModel model)
+    public void Init(CardModel model, UnityAction onClick)
     {
         Model = model;
         InitiateDisplay();
+
+        Button thisButton = GetComponent<Button>();
+        thisButton.onClick.RemoveAllListeners();
+        thisButton.onClick.AddListener(onClick);
+
     }
 
     void InitiateDisplay()

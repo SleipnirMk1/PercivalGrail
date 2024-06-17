@@ -26,7 +26,7 @@ public class CardController : MonoBehaviour
     {
         Model = model;
         View = view;
-        View.Init(Model);
+        View.Init(Model, OnClick);
 
         isProducing = false;
         timer = 0f;
@@ -119,7 +119,7 @@ public class CardController : MonoBehaviour
 
                     if (!r.allMaterialsRequired && valid)
                         break;
-                    else if (!valid)
+                    else if (r.allMaterialsRequired)
                         break;
                 }
                 
@@ -200,5 +200,22 @@ public class CardController : MonoBehaviour
         int idx = UnityEngine.Random.Range(0, possiblePreference.Count);
         preference = possiblePreference[idx];
         View.UpdatePreference(preference);
+    }
+
+    void OnClick()
+    {
+        if (Model.GetOutput().Count > 0)
+        {
+            int idx = 0;
+            for (int i = 0; i < Model.GetOutputCount(); i++)
+            {
+                idx = UnityEngine.Random.Range(0, Model.GetOutput().Count);
+                CardModel c = Model.GetOutput()[idx];
+
+                ContainerController.Instance.CreateCard(c);
+            }
+
+            ContainerController.Instance.DestroyCard(this);
+        }
     }
 }

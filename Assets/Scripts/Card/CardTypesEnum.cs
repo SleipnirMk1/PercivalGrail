@@ -5,5 +5,6 @@ public enum CardTypesEnum
     Resource,
     Production,
     Quest,
+    Booster,
     Misc
 }

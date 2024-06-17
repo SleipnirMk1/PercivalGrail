@@ -16,7 +16,7 @@ MonoBehaviour:
   cardType: 2
   cardColor: {r: 0, g: 0.21559507, b: 0.78867924, a: 1}
   recipes:
-  - productionDuration: 2
+  - productionDuration: 40
     allMaterialsRequired: 0
     consumeMaterials: 0
     materials:
@@ -34,3 +34,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ac1ae3ea5f9693f4bb33843edf8345ec, type: 2}
   - {fileID: 11400000, guid: ecddfa6f8adb11a46b8cf15ff3899942, type: 2}
   prefChangeDuration: 120
+  output: []
+  count: 0

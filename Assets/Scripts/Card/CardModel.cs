@@ -15,6 +15,10 @@ public class CardModel : ScriptableObject
     [SerializeField] private List<CardModel> possiblePreference;
     [SerializeField] private float prefChangeDuration;
 
+    [Header("For Boosters")]
+    [SerializeField] private List<CardModel> output;
+    [SerializeField] private int count;
+
     // public CardModel() {}
     // public CardModel(CardModel model) 
     // {
@@ -41,5 +45,11 @@ public class CardModel : ScriptableObject
     }
     public float GetPrefChangeDuration() {
         return prefChangeDuration;
+    }
+    public List<CardModel> GetOutput() {
+        return output;
+    }
+    public int GetOutputCount() {
+        return count;
     }
 }
